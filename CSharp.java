@@ -7,27 +7,15 @@
  */
 public class CSharp extends OOP 
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class CSharp
-     */
-    public CSharp()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    public void init(){
+  BirthDate="^2000^";
+  Creator="^Anders Hejlsberg^Microsoft^";
+  Owner="^Microsoft^";
+  ReasonForDemand="^Websites^Cool tool for gaming using Unity framework^";
+  GitHubUsageRank="^7^";
+  KeyCompanies="^Microsoft^";
+  AvgSalary="^$110,000^";
+  ide="^Visual Studio^JetBrains Rider^";
+  frameworks="^Unity Game Engine^.Net^APS.Net^";
+}
 }

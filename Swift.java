@@ -7,27 +7,15 @@
  */
 public class Swift extends OOP
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Swift
-     */
-    public Swift()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    public void init(){
+  BirthDate="^2014^";
+  Creator="^apple^";
+  Owner="^open source^";
+  ReasonForDemand="^Friendly to use Apple iOS development^";
+  GitHubUsageRank="^14^";
+  KeyCompanies="^Apple^";
+  AvgSalary="^$115,000.00^";
+  ide="^Xcode^AppCode^";
+  frameworks="^Cocoa^Cocoa Touch^";
+}
 }

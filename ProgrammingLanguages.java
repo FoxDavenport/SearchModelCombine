@@ -14,11 +14,14 @@ public class ProgrammingLanguages
         Scanner scan = new Scanner(System.in);
         
         // Make Programming Language Objects
-        Python P = new Python();
+        Python P = new Python(); 
         P.init();
         JavaScript J = new JavaScript();
         J.init();
-        
+        CSharp CSharp= new CSharp();
+        CSharp.init();
+        Swift S= new Swift();
+        S.init();
         
         boolean cont = true; /*used in do while loop to keep everything running*/
         System.out.println("Hi Welcome To The Programming Languages Program!");
@@ -78,6 +81,30 @@ public class ProgrammingLanguages
             System.out.println(J.AvgSalary.replace('^',' '));
             System.out.println(J.ide.replace('^',' '));
             System.out.println(J.frameworks.replace('^',' '));
+            
+            // Show CSharp options
+            System.out.println("C# Options:");
+            System.out.println(CSharp.BirthDate.replace('^',' '));
+            System.out.println(CSharp.Creator.replace('^',' '));
+            System.out.println(CSharp.Owner.replace('^',' '));
+            System.out.println(CSharp.ReasonForDemand.replace('^',' '));
+            System.out.println(CSharp.GitHubUsageRank.replace('^',' '));
+            System.out.println(CSharp.KeyCompanies.replace('^',' '));
+            System.out.println(CSharp.AvgSalary.replace('^',' '));
+            System.out.println(CSharp.ide.replace('^',' '));
+            System.out.println(CSharp.frameworks.replace('^',' '));
+            
+            // Show Sprint options
+            System.out.println("Sprint Options:");
+            System.out.println(S.BirthDate.replace('^',' '));
+            System.out.println(S.Creator.replace('^',' '));
+            System.out.println(S.Owner.replace('^',' '));
+            System.out.println(S.ReasonForDemand.replace('^',' '));
+            System.out.println(S.GitHubUsageRank.replace('^',' '));
+            System.out.println(S.KeyCompanies.replace('^',' '));
+            System.out.println(S.AvgSalary.replace('^',' '));
+            System.out.println(S.ide.replace('^',' '));
+            System.out.println(S.frameworks.replace('^',' '));
             break;
             
             case 2:
@@ -118,6 +145,32 @@ public class ProgrammingLanguages
                J.ide.toLowerCase().indexOf(input2) >= 0 || 
                J.frameworks.toLowerCase().indexOf(input2) >= 0) {
                 System.out.println("JavaScript");
+            }
+            
+            //Check C#
+            if(CSharp.BirthDate.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.Creator.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.Owner.toLowerCase().indexOf(input2) >= 0 ||
+               CSharp.ReasonForDemand.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.GitHubUsageRank.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.KeyCompanies.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.AvgSalary.toLowerCase().indexOf(input2) >= 0 ||
+               CSharp.ide.toLowerCase().indexOf(input2) >= 0 || 
+               CSharp.frameworks.toLowerCase().indexOf(input2) >= 0) {
+                System.out.println("C#");
+            }
+            
+            //Check Sprint
+            if(S.BirthDate.toLowerCase().indexOf(input2) >= 0 || 
+               S.Creator.toLowerCase().indexOf(input2) >= 0 || 
+               S.Owner.toLowerCase().indexOf(input2) >= 0 ||
+               S.ReasonForDemand.toLowerCase().indexOf(input2) >= 0 || 
+               S.GitHubUsageRank.toLowerCase().indexOf(input2) >= 0 || 
+               S.KeyCompanies.toLowerCase().indexOf(input2) >= 0 || 
+               S.AvgSalary.toLowerCase().indexOf(input2) >= 0 ||
+               S.ide.toLowerCase().indexOf(input2) >= 0 || 
+               S.frameworks.toLowerCase().indexOf(input2) >= 0) {
+                System.out.println("Swift");
             }
             break;
         
